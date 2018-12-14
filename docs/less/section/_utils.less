@@ -1,0 +1,60 @@
+/* 
+*box-sixing-model
+*/
+
+* {
+	box-sizing: border-box;
+}
+
+/*
+	*для отзывчевых изоброжений
+*/
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+/*
+	для вертикальноя полоски
+*/
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solit #ccc;
+	margin: 1em 0;
+	padding: 0;
+}
+
+/*
+	ограничить маштобирование окна для ввода текста 
+*/
+textarea {
+	resize: vertical;
+}
+
+/*
+	остановить обтикание и предотвращение схлопование
+*/
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+
+.blocks {
+	width: 100%;
+	margin-bottom: 20px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	text-align: center;
+	background-color: #edf516;
+	font-weight: 700;
+	letter-spacing: 2px;
+	color: #ff0027;
+}
