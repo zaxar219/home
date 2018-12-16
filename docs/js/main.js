@@ -43,7 +43,17 @@ $(document).ready(function(){
 	
 	$("#agents-slider").owlCarousel({
 		singleItem: true,
+		
 	});
+	
+	$("#bottom-slider").owlCarousel({
+		singleItem: true,
+		
+		navigation: true,
+		navigationText: ["",""],
+		slideSpeed: 500
+	});
+	
 	
 	
 	

@@ -557,6 +557,94 @@
 #agents-slider .owl-controls {
   margin-top: 0;
 }
+.buying {
+  background-color: #f3f2f2;
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+.buying__hom {
+  font-size: 37px;
+  font-family: "Raleway";
+  color: #3c3c3c;
+  font-weight: 300;
+  float: left;
+}
+.buying__hom .buying__hom-big {
+  font-weight: 700;
+  display: inline;
+}
+.slider-bottom {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 110px;
+  padding-bottom: 175px;
+  text-align: center;
+}
+.slider-bottom__testimonials {
+  font-size: 45px;
+  font-family: "Raleway";
+  color: #fff;
+}
+.slider-bottom__border {
+  border-bottom: 3px solid #e2574c;
+  width: 115px;
+  padding-top: 30px;
+  margin-bottom: 45px;
+  display: inline-block;
+}
+.slider-bottom__description {
+  font-size: 24px;
+  font-family: "Raleway";
+  color: #fff;
+  line-height: 1.4;
+  margin-bottom: 30px;
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.slider-bottom__aftor {
+  font-size: 20px;
+  font-family: "PlayfairDisplay";
+  color: #fff;
+}
+#bottom-slider .owl-pagination {
+  position: absolute;
+  bottom: -66px;
+  width: 100%;
+  text-align: center;
+}
+#bottom-slider .owl-page span {
+  border: 2px solid #fff;
+}
+#bottom-slider .active span {
+  background-color: #fff;
+}
+#bottom-slider .owl-controls {
+  margin-top: 0;
+}
+#bottom-slider .owl-buttons .owl-prev {
+  background-image: url('../img/icon/left.png');
+  width: 30px;
+  height: 50px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgba(78, 78, 78, 0.01);
+  position: absolute;
+  top: 13px;
+  left: 0;
+}
+#bottom-slider .owl-buttons .owl-next {
+  background-image: url('../img/icon/right.png');
+  width: 30px;
+  height: 50px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgba(78, 78, 78, 0.01);
+  position: absolute;
+  top: 13px;
+  right: 0;
+}
 .menu {
   margin: 0;
 }
@@ -664,5 +752,9 @@ textarea {
   box-shadow: 0px 3px 25px 0px #dd6258;
   text-decoration: none;
   color: #fff;
+}
+.button--float-right {
+  float: right;
+  margin: 0;
 }
 /*# sourceMappingURL=main.css.map */
