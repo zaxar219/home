@@ -4,7 +4,7 @@
 	
 }
 
-.home {
+.home-slider {
 	width: auto;
 	padding-top: 270px;
 	padding-bottom: 90px;
@@ -39,7 +39,7 @@
 	
 }
 
-.slider__title {
+.home-slider__title {
 	font-size: 28px;
 	font-family: "Raleway";
 	color: #fff;
@@ -58,7 +58,7 @@
 	}
 }
 
-.home__price {
+.home-slider__content {
 	
 	position: relative;
 	display: flex;
@@ -66,15 +66,16 @@
 	justify-content: center;
 }
 
-.slider__price {
+.home-slider__content-price {
 	display: inline;
 	font-size: 36px;
 	color: #fff;
 	text-align: center;
 	margin-right: 22px;
+	font-weight: 300;
 }
 
-.info {
+.home-slider__content-info {
 	display: block;
 	font-size: 16px;
 	font-weight: 700;
@@ -85,47 +86,53 @@
 	padding-top: 9px;
 	text-align: center;
 	
-	a {
-		color: #fff;
-		text-decoration: none;
+	color: #fff;
+	text-decoration: none;
+	
 		&:hover{
+			text-decoration: none;
+			color: #a3aed3;
+			background-color: rgba(255, 255, 255, 0.4);
+		}
+}
+
+#top-slider {
+	.owl-pagination {
+		position: absolute;
+		top: 451px;
+		width: 100%;
+		text-align: center;
+
+		@media (min-width: 768px){
+			top: 358px;
+	//		left: 355px;
+		}
+		@media (min-width: 1200px) {
+			top: 538px;
+	//		left: 584px;
 		}
 	}
-}
+	.owl-page {
 
-.owl-pagination {
-	position: absolute;
-	top: 451px;
-	width: 100%;
-	text-align: center;
-	
-	@media (min-width: 768px){
-		top: 358px;
-//		left: 355px;
-	}
-	@media (min-width: 1200px) {
-		top: 538px;
-//		left: 584px;
-	}
-}
+		span {
+			border: 2px solid #fff;
 
-.owl-page {
+		}
+	}
+
+	.active {
+
+
+		span {
+			background-color: #fff;
+
+		}
+	}
 	
-	span {
-		border: 2px solid #fff;
-		
+	.owl-controls {
+		margin-top: 0;
 	}
 }
-
-.active {
-	
-	
-	span {
-		background-color: #fff;
-		
-	}
-}
-
 
 
 

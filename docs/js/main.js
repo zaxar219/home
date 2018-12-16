@@ -36,11 +36,16 @@ $(document).ready(function(){
 		}
 	});
 	
-	// Вызов слайдера owl-carousel
+	// Вызов слайдера  
 	$("#top-slider").owlCarousel({
 		singleItem: true,
 	});
 	
+	$("#agents-slider").owlCarousel({
+		singleItem: true,
+	});
 	
-
+	
+	
+	
 });

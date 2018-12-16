@@ -1,38 +1,21 @@
-.properties__card {
+.rent-card {
 	text-align: center;
 	background-color: #fff;
 	margin-bottom: 30px;
+	border: 1px solid #e6e6e6;
 }
 
-.properties__card-png {
-	
+.rent-card__png {
+	background-size: cover;
 	width: 100%;
 	height: 245px;
 	background-position: center;
 	background-repeat: no-repeat;
 	margin-bottom: 30px;
 	
-	&--png-1 {
-		background-image: url('../img/header/header-img-1-1.png');
-	}
-	&--png-2 {
-		background-image: url('../img/header/header-img-2-2.png');
-	}
-	&--png-3 {
-		background-image: url('../img/header/header-3-3.png');
-	}
-	&--png-4 {
-		background-image: url('../img/header/header-img-4-4.png');
-	}
-	&--png-5 {
-		background-image: url('../img/header/header-img-5-5.png');
-	}
-	&--png-6 {
-		background-image: url('../img/header/header-img-6-6.png');
-	}
 }
 
-.properties__card-work {
+.rent-card__work {
 	font-size: 22px;
 	font-family: "Raleway";
 	color: #3c3c3c;
@@ -40,14 +23,14 @@
 	margin-bottom: 10px;
 }
 
-.properties__card--where {
+.rent-card__where {
 	font-size: 15px;
 	font-family: "PlayfairDisplay";
 	color: #797979;
 	margin-bottom: 15px;
 }
 
-.properties__card--price {
+.rent-card__price {
 	font-size: 16px;
 	color: #e2574c;
 	font-weight: 600;
@@ -55,7 +38,7 @@
 }
 
 
-.properties__card--feedback {
+.rent-card__feedback {
 	border-top: 1px solid #e6e6e6;
 	display: flex;
 	align-items: baseline;
@@ -80,3 +63,29 @@
 		margin-right: 10px;
 	}
 }
+
+.rent-card__feedback-commit {
+	font-size: 13px;
+	color: #797979;
+	
+	&--point {
+		
+		&:before {
+		content: " ";
+		width: 5px;
+		height: 5px;
+		background-image: url('../img/icon/dots.png');
+		background-repeat: no-repeat;
+		display: inline-block;
+		margin-left: 10px;
+		margin-right: 10px;
+		}
+	}
+	
+	
+}
+
+
+
+
+

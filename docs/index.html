@@ -11,20 +11,21 @@
 	<!------общее описание страници-->
 	<meta name="keywords" content="">
 
-	<!------для адоптивной верстки	-------->
+	<!------для адаптивной верстки	-------->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-	<!-----чттобы браузер internet explorer использовал свою последнею версию------->
+	<!----- браузер internet explorer использовал свою последнею версию------->
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<!-----нормалайс и стили-->
 	<link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
 	<link rel="stylesheet" href="css/main.css">
-	<!------шрефты------------>
+	<!------шрифты------------>
 	<link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,700i|Raleway:300,400,500,700" rel="stylesheet">
 	<!--------Карусель---------->
 	<link rel="stylesheet" href="libs/owl-carousel/owl.carousel.css">
 	<link rel="stylesheet" href="libs/owl-carousel/owl.theme.css">
+	
 	<!--------favicons	-------->
 	<link rel="icon" href="img/favicons/web.ico">
 </head>
@@ -32,12 +33,13 @@
 <body>
 	<!--- Menu --->
 	<div class="container">
+		<div class="menu">
 		<div class="row">
 			<!--- Логотип --->
 			<div class="col-sm-3">
-				<a href="#">
-					<div class="logo">
-					</div>
+				<a class="logo" href="#">
+					<img src="img/logo/logo.png" alt="logo">
+					<!--<div class="logo"></div>-->
 				</a>
 			</div>
 			<!--- //Логотип --->
@@ -47,139 +49,130 @@
 					<div id="navigation-toggle" class="navigation__toggle-button">
 						<img src="img/logo/logo.png" alt="logo">
 					</div>
-					<div>
-						<ul>
-							<li><a href="#">Home</a></li>
-							<li><a href="#">About Us</a></li>
-							<li><a href="#">Property</a></li>
-							<li><a href="#">Our Blog</a></li>
-							<li><a href="#">Contacts</a></li>
-						</ul>
-					</div>
+					<ul class="navigation__list">
+						<li class="navigation__list-li"><a class="navigation__list-li-link" href="#">Home</a></li>
+						<li class="navigation__list-li"><a class="navigation__list-li-link" href="#">About Us</a></li>
+						<li class="navigation__list-li"><a class="navigation__list-li-link" href="#">Property</a></li>
+						<li class="navigation__list-li"><a class="navigation__list-li-link" href="#">Our Blog</a></li>
+						<li class="navigation__list-li"><a class="navigation__list-li-link" href="#">Contacts</a></li>
+					</ul>
 				</nav>
 			</div>
 			<!--- //Навигация --->
 			<!--- Социальные иконки --->
-			<div class="menu__social-icons">
 				<div class="col-sm-2">
-					<div class="menu__icon">
-						<div class="icon">
-							<a href="#"><i class="fa fa-facebook-f"></i></a>
-						</div>
-						<div class="icon">
-							<a href="#"><i class="fa fa-pinterest-p"></i></a>
-						</div>
-						<div class="icon">
-							<a href="#"><i class="fa fa-instagram"></i></a>
-						</div>
-						<div class="icon">
-							<a href="#"><i class="fa fa-vk"></i></a>
-						</div>
+					<div class="social-icon">
+						<a class="social-icon__icon" href="#">
+							<div class="social-icon__icon-svg" style="background-image: url('./img/icon/facebook.svg')"></div>
+							<!--<a href="#"><i class="fa fa-facebook-f"></i></a>-->
+						</a>
+						<a class="social-icon__icon" href="#">
+							<div class="social-icon__icon-svg" style="background-image: url('./img/icon/pinterest.svg')"></div>
+							<!--<a href="#"><i class="fa fa-pinterest-p"></i></a>-->
+						</a>
+						<a class="social-icon__icon" href="#">
+							<div class="social-icon__icon-svg" style="background-image: url('./img/icon/instagramm.svg')"></div>
+							<!--<a href="#"><i class="fa fa-instagram"></i></a>-->
+						</a>
+						<a class="social-icon__icon" href="#">
+							<div class="social-icon__icon-svg" style="background-image: url('./img/icon/google.svg')"></div>
+							<!--<a href="#"><i class="fa fa-vk"></i></a>-->
+						</a>
 					</div>
 				</div>
-			</div>
 			<!--- //Социальные иконки --->
 		</div>
+		</div>
 	</div>
-
 	<!--- //Menu --->
 	<!--- слайдер-->
 	<div class="header-slider">
 		<div id="top-slider" class="owl-carusel">
-
 			<!-- Слайд 1 -->
-			<div class="home">
-				<div class="slider__title">
+			<div class="home-slider" style="background-image: url('./img/room/room-1.png')">
+				<div class="home-slider__title">
 					120 Anastasia Avenue, Coral Gables
 				</div>
-				<div class="home__price">
-					<div class="slider__price">
+				<div class="home-slider__content">
+					<div class="home-slider__content-price">
 						$625,000
 					</div>
-					<div class="info">
-						<a href="#"> MORE INFO</a>
-					</div>
+					<a class="home-slider__content-info" href="#"> MORE INFO</a>
 				</div>
 			</div>
 			<!-- //Слайд 1 -->
 			<!-- Слайд 2 -->
-			<div class="home-2">
-				<div class="slider__title">
+			<div class="home-slider" style="background-image: url('./img/room/room-2.png')">
+				<div class="home-slider__title">
 					120 Anastasia Avenue, Coral Gables
 				</div>
-				<div class="home__price">
-					<div class="slider__price">
+				<div class="home-slider__content">
+					<div class="home-slider__content-price">
 						$625,000
 					</div>
-					<div class="info">
-						<a href="#"> MORE INFO</a>
-					</div>
+					<a class="home-slider__content-info" href="#"> MORE INFO</a>
 				</div>
 			</div>
 			<!-- //Слайд 2 -->
 			<!-- Слайд 3 -->
-			<div class="home">
-				<div class="slider__title">
+			<div class="home-slider" style="background-image: url('./img/room/room-1.png')">
+				<div class="home-slider__title">
 					120 Anastasia Avenue, Coral Gables
 				</div>
-				<div class="home__price">
-					<div class="slider__price">
+				<div class="home-slider__content">
+					<div class="home-slider__content-price">
 						$625,000
 					</div>
-					<div class="info">
-						<a href="#"> MORE INFO</a>
-					</div>
+					<a class="home-slider__content-info" href="#"> MORE INFO</a>
 				</div>
 			</div>
 			<!-- //Слайд 3 -->
 			<!-- Слайд 4 -->
-			<div class="home-2">
+			<div class="home-slider" style="background-image: url('./img/room/room-2.png')">
 				<div class="slider__title">
 					120 Anastasia Avenue, Coral Gables
 				</div>
-				<div class="home__price">
-					<div class="slider__price">
+				<div class="home-slider__content">
+					<div class="home-slider__content-price">
 						$625,000
 					</div>
-					<div class="info">
-						<a href="#"> MORE INFO</a>
-					</div>
+					<a class="home-slider__content-info" href="#"> MORE INFO</a>
 				</div>
 			</div>
 			<!-- //Слайд 4 -->
 		</div>
 	</div>
 	<!--- //слайдер-->
-	<!--- Рассказ --->
+	<!--- Предложение --->
 	<div class="container">
-		<div class="txet">
+		<div class="deals">
 			<div class="row">
 				<div class="col-sm-4">
-					<div class="text-left">
+					<div class="deals__state">
 						We are Offering the Best Estate Deals
 					</div>
 				</div>
 				<div class="col-sm-8">
-					<div class="text-right">
+					<div class="deals__description">
 						Quisque diam lorem interdum vitaapibus ac scelerisque vitae pede. Donec eget tellus non erat lacinia fertum. Donec in velit vel ipsum auctovinar. Proin umcorper urna et felisstibulum iaculis lacinia est. Proin dictum elem entum velit fusce euismod. Aenean commodo ligula eget dolor. Aenean massa. Lorem ipsum dolor sit amet, consec tetuer adipis elit, aliquam eget nibh etlibura. Lorem ipsum dolor sitamet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<!--- //Рассказ --->
+	<!--- //Предложение --->
 	<!--- benefit --->
-	<div class="benefit">
+	<div class="middle">
 		<div class="container">
 			<div class="row">
 				<!-- card-1 -->
 				<div class="col-sm-3">
-					<div class="benefit__card">
-						<div class="benefit-icon benefit-icon--icon-1"></div>
-						<div class="benefit-name">
+					<div class="benefit">
+						<div class="benefit__icon" style="background-image: url('./img/icon/earth.png')"></div>
+						<div class="benefit__name">
 							Whole World
 						</div>
-						<div class="benefit-text">
+						<div class="benefit__text">
 							Proin umcorper urna et felisstibulum iaculis lacinia est. Proin dictum elem entum velit fusce euismod. Aenean commodo ligula eget dolor.
 						</div>
 					</div>
@@ -187,12 +180,12 @@
 				<!-- card-1 -->
 				<!-- card-2 -->
 				<div class="col-sm-3">
-					<div class="benefit__card">
-						<div class="benefit-icon benefit-icon--icon-2"></div>
-						<div class="benefit-name">
+					<div class="benefit">
+						<div class="benefit__icon" style="background-image: url('./img/icon/briefcase.png')"></div>
+						<div class="benefit__name">
 							Confidentially
 						</div>
-						<div class="benefit-text">
+						<div class="benefit__text">
 							Proin umcorper urna et felisstibulum iaculis lacinia est. Proin dictum elem entum velit fusce euismod. Aenean commodo ligula eget dolor.
 						</div>
 					</div>
@@ -200,12 +193,12 @@
 				<!-- //card-2 -->
 				<!-- card-3 -->
 				<div class="col-sm-3">
-					<div class="benefit__card">
-						<div class="benefit-icon benefit-icon--icon-3"></div>
-						<div class="benefit-name">
+					<div class="benefit">
+						<div class="benefit__icon" style="background-image: url('./img/icon/photos.png')"></div>
+						<div class="benefit__name">
 							Good Previews
 						</div>
-						<div class="benefit-text">
+						<div class="benefit__text">
 							Proin umcorper urna et felisstibulum iaculis lacinia est. Proin dictum elem entum velit fusce euismod. Aenean commodo ligula eget dolor.
 						</div>
 					</div>
@@ -213,12 +206,12 @@
 				<!-- //card-3 -->
 				<!-- card-4 -->
 				<div class="col-sm-3">
-					<div class="benefit__card">
-						<div class="benefit-icon benefit-icon--icon-4"></div>
-						<div class="benefit-name">
+					<div class="benefit">
+						<div class="benefit__icon" style="background-image: url('./img/icon/file-drawer.png')"></div>
+						<div class="benefit__name">
 							Confidentially
 						</div>
-						<div class="benefit-text">
+						<div class="benefit__text">
 							Proin umcorper urna et felisstibulum iaculis lacinia est. Proin dictum elem entum velit fusce euismod. Aenean commodo ligula eget dolor.
 						</div>
 					</div>
@@ -228,186 +221,264 @@
 		</div>
 	</div>
 	<!--- //benefit --->
-	
-	
-	
+	<!--- properties --->
 	<div class="properties">
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-6 col-sm-offset-3">
-					<div class="properties__name">
-						Featured <div class="properties__name--bold">Properties</div>
-					</div>
-					<div class="properties__name--border"></div>
-					<div class="properties__text">
-						Quisque diam lorem interdum vitaapibus vitae pede. Donec eget tellus non erat lacinia fertum. Donec in velit vel ipsum auctovinar.
+					<div class="headline">
+						<div class="headline__name">
+							Featured <div class="headline__name--big">Properties</div>
+						</div>
+						<div class="headline__border"></div>
+						<div class="headline__text">
+							Quisque diam lorem interdum vitaapibus vitae pede. Donec eget tellus non erat lacinia fertum. Donec in velit vel ipsum auctovinar.
+						</div>
 					</div>
 				</div>
+			</div>
+			<div class="row">
 				<!--- card-1 --->
 				<div class="col-sm-6 col-md-4">
-					<div class="properties__card">
-						<div class="properties__card-png properties__card-png--png-1"></div>
-						<div class="properties__card-work">
+					<div class="rent-card">
+						<div class="rent-card__png" style="background-image: url('./img/card/card-1.png')"></div>
+						<div class="rent-card__work">
 							1450 Cloudcroft Drop
 						</div>
-						<div class="properties__card--where">
+						<div class="rent-card__where">
 							Illinois / Chicago
 						</div>
-						<div class="properties__card--price">
+						<div class="rent-card__price">
 							$250,000
 						</div>
-						<div class="properties__card--feedback">
-							<div class="commit-1">400 Sq Ft</div>
-							<div class="point"></div>
-							<div class="commit-2">2 Bedrooms</div>
-						    <div class="point"></div>
-							<div class="commit-3">1 Bathroom</div> 
+						<div class="rent-card__feedback">
+							<div class="rent-card__feedback-commit">400 Sq Ft</div>
+							<div class="rent-card__feedback-commit rent-card__feedback-commit--point">2 Bedrooms</div>
+							<div class="rent-card__feedback-commit rent-card__feedback-commit--point">1 Bathroom</div>
 						</div>
 					</div>
 				</div>
 				<!--- //card-1 --->
 				<!--- card-2 --->
 				<div class="col-sm-6 col-md-4">
-					<div class="properties__card">
-						<div class="properties__card-png properties__card-png--png-2"></div>
-						<div class="properties__card-work">
+					<div class="rent-card">
+						<div class="rent-card__png" style="background-image: url('./img/card/card-2.png')"></div>
+						<div class="rent-card__work">
 							140 Small Village
 						</div>
-						<div class="properties__card--where">
+						<div class="rent-card__where">
 							Missouri / Kansas City
 						</div>
-						<div class="properties__card--price">
+						<div class="rent-card__price">
 							$200,000
 						</div>
-						<div class="properties__card--feedback">
-							<div class="commit-1">400 Sq Ft</div>
-							<div class="point"></div>
-							<div class="commit-2">2 Bedrooms</div>
-						    <div class="point"></div>
-							<div class="commit-3">1 Bathroom</div>  
+						<div class="rent-card__feedback">
+							<div class="rent-card__feedback-commit">400 Sq Ft</div>
+							<div class="rent-card__feedback-commit rent-card__feedback-commit--point">2 Bedrooms</div>
+							<div class="rent-card__feedback-commit rent-card__feedback-commit--point">1 Bathroom</div>
 						</div>
 					</div>
 				</div>
 				<!--- //card-2 --->
 				<!--- card-3 --->
 				<div class="col-sm-6 col-md-4">
-					<div class="properties__card">
-						<div class="properties__card-png properties__card-png--png-3"></div>
-						<div class="properties__card-work">
+					<div class="rent-card">
+						<div class="rent-card__png" style="background-image: url('./img/card/card-3.png')"></div>
+						<div class="rent-card__work">
 							1250 Lake House
 						</div>
-						<div class="properties__card--where">
+						<div class="rent-card__where">
 							Colorado / Denver
 						</div>
-						<div class="properties__card--price">
+						<div class="rent-card__price">
 							$339,000
 						</div>
-						<div class="properties__card--feedback">
-							<div class="commit-1">400 Sq Ft</div>
-							<div class="point"></div>
-							<div class="commit-2">2 Bedrooms</div>
-						    <div class="point"></div>
-							<div class="commit-3">1 Bathroom</div> 
+						<div class="rent-card__feedback">
+							<div class="rent-card__feedback-commit">400 Sq Ft</div>
+							<div class="rent-card__feedback-commit rent-card__feedback-commit--point">2 Bedrooms</div>
+							<div class="rent-card__feedback-commit rent-card__feedback-commit--point">1 Bathroom</div>
 						</div>
 					</div>
 				</div>
 				<!--- //card-3 --->
 				<!--- card-4 --->
 				<div class="col-sm-6 col-md-4">
-					<div class="properties__card">
-						<div class="properties__card-png properties__card-png--png-4"></div>
-						<div class="properties__card-work">
+					<div class="rent-card">
+						<div class="rent-card__png" style="background-image: url('./img/card/card-4.png')"></div>
+						<div class="rent-card__work">
 							1450 Cloudcroft Drop
 						</div>
-						<div class="properties__card--where">
+						<div class="rent-card__where">
 							Illinois / Chicago
 						</div>
-						<div class="properties__card--price">
+						<div class="rent-card__price">
 							$250,000
 						</div>
-						<div class="properties__card--feedback">
-							<div class="commit-1">400 Sq Ft</div>
-							<div class="point"></div>
-							<div class="commit-2">2 Bedrooms</div>
-						    <div class="point"></div>
-							<div class="commit-3">1 Bathroom</div>  
+						<div class="rent-card__feedback">
+							<div class="rent-card__feedback-commit">400 Sq Ft</div>
+							<div class="rent-card__feedback-commit rent-card__feedback-commit--point">2 Bedrooms</div>
+							<div class="rent-card__feedback-commit rent-card__feedback-commit--point">1 Bathroom</div>
 						</div>
 					</div>
 				</div>
 				<!--- //card-4 --->
 				<!--- card-5 --->
 				<div class="col-sm-6 col-md-4">
-					<div class="properties__card">
-						<div class="properties__card-png properties__card-png--png-5"></div>
-						<div class="properties__card-work">
+					<div class="rent-card">
+						<div class="rent-card__png" style="background-image: url('./img/card/card-5.png')"></div>
+						<div class="rent-card__work">
 							140 Small Village
 						</div>
-						<div class="properties__card--where">
+						<div class="rent-card__where">
 							Missouri / Kansas City
 						</div>
-						<div class="properties__card--price">
+						<div class="rent-card__price">
 							$200,000
 						</div>
-						<div class="properties__card--feedback">
-							<div class="commit-1">400 Sq Ft</div>
-							<div class="point"></div>
-							<div class="commit-2">2 Bedrooms</div>
-						    <div class="point"></div>
-							<div class="commit-3">1 Bathroom</div>
+						<div class="rent-card__feedback">
+							<div class="rent-card__feedback-commit">400 Sq Ft</div>
+							<div class="rent-card__feedback-commit rent-card__feedback-commit--point">2 Bedrooms</div>
+							<div class="rent-card__feedback-commit rent-card__feedback-commit--point">1 Bathroom</div>
 						</div>
 					</div>
 				</div>
 				<!--- //card-5 --->
 				<!--- card-6 --->
 				<div class="col-sm-6 col-md-4">
-					<div class="properties__card">
-						<div class="properties__card-png properties__card-png--png-6"></div>
-						<div class="properties__card-work">
+					<div class="rent-card">
+						<div class="rent-card__png" style="background-image: url('./img/card/card-6.png')"></div>
+						<div class="rent-card__work">
 							1250 Lake House
 						</div>
-						<div class="properties__card--where">
+						<div class="rent-card__where">
 							Colorado / Denver
 						</div>
-						<div class="properties__card--price">
+						<div class="rent-card__price">
 							$339,000
 						</div>
-						<div class="properties__card--feedback">
-							<div class="commit-1">400 Sq Ft</div>
-							<div class="point"></div>
-							<div class="commit-2">2 Bedrooms</div>
-						    <div class="point"></div>
-							<div class="commit-3">1 Bathroom</div>
+						<div class="rent-card__feedback">
+							<div class="rent-card__feedback-commit">400 Sq Ft</div>
+							<div class="rent-card__feedback-commit rent-card__feedback-commit--point">2 Bedrooms</div>
+							<div class="rent-card__feedback-commit rent-card__feedback-commit--point">1 Bathroom</div>
 						</div>
 					</div>
-			</div>
-			<!--- //card-6 --->
-			<div class="clearfix"></div>
-			<a href="#">
-				<div class="button">
-				
-					all properties
-					
 				</div>
-			</a>
-			
+				<!--- //card-6 --->
+				<div class="clearfix"></div>
+				<!--- button --->
+				<a class="button" href="#">
+						all properties
+				</a>
+				<!--- //button --->
 			</div>
 		</div>
 	</div>
-	<!--- //Свойства --->
-	<!--  карусель  -->
-	<div class="row">
-		<div class="col-sm-4">
-			<div class="blocks">
-				фотография
+	<!--- //properties --->
+	<!--  Агенты  -->
+	<div class="container">
+		<div class="agents">
+			<div class="row">
+				<div class="col-sm-6 col-sm-offset-4">
+					<div class="our-agens">
+						Our <div class="our-agens__bold">Agents</div>
+					</div>
+				</div>
+			</div>
+			<div id="agents-slider" class="owl-carusel">
+				<!--- Слайд аент 1-->
+				<div class="staff">
+					<div class="row">
+						<div class="col-sm-4">
+							<div class="staff__photo">
+								<img src="img/photo/photo-man.png" alt="photo">
+							</div>
+						</div>
+						<div class="col-sm-8">
+							<div class="staff__slider-border"></div>
+							<div class="staff__name">
+								Lisa Gerrard
+							</div>
+							<div class="staff__taxt">
+								Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, raesent luptatum zzril delenit augue duis dolore te feugait nulla nonummy nibh euismod tincidunt facilisi.
+							</div>
+							<div class="staff__contect">
+								<div class="staff__contect-phon-icon" style="background-image: url('./img/icon/phon.png')"></div>
+								<div class="staff__contect-phon">
+									+ 7 (123) 456-78-99
+								</div>
+								<div class="staff__contect-email-icon" style="background-image: url('./img/icon/email.png')"></div>
+								<div class="staff__contect-email">
+									<a href="#">lisa.gerrard@realhome.com</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--- //Слайд аент 1-->
+				<!--- Слайд аент 2-->
+				<div class="staff">
+					<div class="row">
+						<div class="col-sm-4">
+							<div class="staff__photo">
+								<img src="img/photo/photo-woman.png" alt="photo">
+							</div>
+						</div>
+						<div class="col-sm-8">
+							<div class="staff__slider-border"></div>
+							<div class="staff__name">
+								Lisa Gerrard
+							</div>
+							<div class="staff__taxt">
+								Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, raesent luptatum zzril delenit augue duis dolore te feugait nulla nonummy nibh euismod tincidunt facilisi.
+							</div>
+							<div class="staff__contect">
+								<div class="staff__contect-phon-icon" style="background-image: url('./img/icon/phon.png')"></div>
+								<div class="staff__contect-phon">
+									+ 7 (123) 456-78-99
+								</div>
+								<div class="staff__contect-email-icon" style="background-image: url('./img/icon/email.png')"></div>
+								<div class="staff__contect-email">
+									<a href="#">lisa.gerrard@realhome.com</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--- //Слайд аент 2-->
+				<!--- Слайд аент 3-->
+				<div class="staff">
+					<div class="row">
+						<div class="col-sm-4">
+							<div class="staff__photo">
+								<img src="img/photo/photo-man.png" alt="photo">
+							</div>
+						</div>
+						<div class="col-sm-8">
+							<div class="staff__slider-border"></div>
+							<div class="staff__name">
+								Lisa Gerrard
+							</div>
+							<div class="staff__taxt">
+								Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, raesent luptatum zzril delenit augue duis dolore te feugait nulla nonummy nibh euismod tincidunt facilisi.
+							</div>
+							<div class="staff__contect">
+								<div class="staff__contect-phon-icon" style="background-image: url('./img/icon/phon.png')"></div>
+								<div class="staff__contect-phon">
+									+ 7 (123) 456-78-99
+								</div>
+								<div class="staff__contect-email-icon" style="background-image: url('./img/icon/email.png')"></div>
+								<div class="staff__contect-email">
+									<a href="#">lisa.gerrard@realhome.com</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--- //Слайд аент 3-->
 			</div>
 		</div>
-		<div class="col-sm-8">
-			<div class="blocks">
-				текст описание
-			</div>
-		</div>
-	</div>
-	<!--  //карусель  -->
+	</div> 
+	<!--  //Агенты  -->
 	<div class="blocks">
 		New Home и кнопка
 	</div>
