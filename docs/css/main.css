@@ -527,18 +527,7 @@
   margin-left: 27px;
 }
 .staff__contect-email {
-  font-size: 16px;
-  font-weight: 500;
   padding-left: 10px;
-}
-.staff__contect-email a {
-  text-decoration: none;
-  border-bottom: 1px solid #e2574c;
-  color: #e2574c;
-}
-.staff__contect-email a:hover {
-  color: #7c3c37;
-  border-bottom: 1px solid #7c3c37;
 }
 #agents-slider .owl-pagination {
   display: block;
@@ -645,6 +634,74 @@
   top: 13px;
   right: 0;
 }
+.partners {
+  padding-top: 90px;
+  padding-bottom: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.partners__section {
+  font-size: 28px;
+  font-family: "Raleway";
+  color: #3c3c3c;
+  font-weight: 300;
+  display: inline;
+}
+.partners__section .partners__section-big {
+  font-weight: 500;
+  display: inline;
+}
+.footer {
+  padding-top: 77px;
+  padding-bottom: 75px;
+  background-color: #303030;
+}
+.footer__icon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 174px;
+  margin-top: 20px;
+}
+.footer__icon-link-svg {
+  width: 36px;
+  height: 36px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.footer__name {
+  font-size: 28px;
+  font-family: "Raleway";
+  color: #fff;
+  font-weight: 300;
+  margin-bottom: 25px;
+}
+.footer__list {
+  padding: 0;
+  margin: 0;
+}
+.footer__list-content {
+  font-size: 15px;
+  font-family: "PlayfairDisplay";
+  color: #fff;
+  line-height: 2;
+  list-style-type: none;
+  text-align: left;
+  padding: 0;
+  margin: 0;
+}
+.footer__list-content--line-height-1 {
+  line-height: 1;
+}
+.footer__list-content-link {
+  text-decoration: none;
+  color: #fff;
+}
+.footer__list-content-link:hover {
+  text-decoration: none;
+  color: #faba8c;
+}
 .menu {
   margin: 0;
 }
@@ -675,6 +732,18 @@
 .agents {
   position: relative;
   padding-top: 48px;
+}
+.mail-link {
+  text-decoration: none;
+  border-bottom: 1px solid #e2574c;
+  color: #e2574c;
+  font-size: 16px;
+  font-weight: 500;
+}
+.mail-link:hover {
+  text-decoration: none;
+  color: #7c3c37;
+  border-bottom: 1px solid #7c3c37;
 }
 /* 
 *box-sixing-model
