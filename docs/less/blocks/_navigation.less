@@ -1,8 +1,9 @@
 .navigation {
 	
 	font-size: 20px;
-	background-color: #fff;
+	
 	color: #fff;
+	background-color: rgba(104, 107, 111, 0.9);
 	
 	font-family: "PlayfairDisplay";
 	z-index: 1;
@@ -14,24 +15,25 @@
 	
 	@media (min-width: 768px) {
 		position: relative;
+		background-color: #fff;
     }
 	
-	background-color: rgba(104, 107, 111, 0.9);
+	
 	
 	@media (min-width: 768px) {
 		background-color: #fff;
-		margin-top: 7px;
 		
 	}
 	.navigation__list-li-link {
 		display: block;
-		padding-top: 29px;
-		padding-bottom: 31px;
+		padding-top: 30px;
+		padding-bottom: 29px;
 		padding-left: 19px;
 		padding-right: 19px;
 		color: #fff;
 		text-decoration: none;
 		width: 100%;
+		transition: all 0.2s ease-in;
 		
 		&:hover {
 			color: #000;
@@ -40,6 +42,7 @@
 		@media (min-width: 768px) {
 			color: #3c3c3c;
 			display: inline;
+			
 		&:hover {
 			background-color: #f2f2f2;
 			text-decoration: none;
@@ -65,28 +68,29 @@
 		background-color: rgba(91, 93, 96, 0.9);
 		color: #fff;
 		@media (min-width: 768px){
-		display: flex;
+		
 		background-color: transparent;
 		}
+		
+		@media (min-width: 768px) {
+			display: flex;
+		}
 	}
+	.navigation__list--open {
+		display: block;
+	}
+	
 	.navigation__list-li{
 		margin: 0;
 		padding: 0;
-		
 		
 		border-bottom: 1px solid #a6a6a7;
 		
 		@media (min-width: 768px) {
 			border-bottom: none;
 			padding: 0;
+			
 		}
-		&.active {
-			background-color: #f2f2f2;
-		}	
-		&:hover {
-			background-color: #f2f2f2;
-		}
-		
 	}
 }
 .navigation__toggle-button {

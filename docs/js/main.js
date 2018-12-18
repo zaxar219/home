@@ -1,40 +1,42 @@
 $(document).ready(function(){
 	
-	// Скрипт для показа и скрытия выпадающего меню на смартфонах
-	//Создали переменные
-	var pull = $("#navigation-toggle");
-	var menu = $(".navigation ul");
-	
-	
-	//Описание событие при нажатии на ссылку
-	$(pull).on("click", function(e){
-		//Отменяем стандартное повидение ссылки в браузере
+	var navToggleButton = $('#navigation-toggle');
+	var navToggleIcon = $('.navigation__toggle .fa');
+	var navBlock = $('.navigation__list');
+	var navBlockOpen = 'navigation__list--open';
+	var navLink = $('.navigation__list-li-link');
+
+	// События по клику на иконку навигации
+	navToggleButton.on('click', function(e){
 		e.preventDefault();
-		//Открываем/Скрываем меню
-
-		menu.slideToggle();
+		navBlock.toggleClass(navBlockOpen);
 		
-		//Добовляем модификатор --activ
-		$(this).toggleClass('navigation__toggle-button--active');
-	});
-
-	
-	$(window).resize(function(){
-	    var w = $(window).width();
-	    if(w > 768) {
-	        menu.removeAttr('style');
-	        pull.removeClass('navigation__toggle-button--active');
-	    } else {
-
-	    }
-	});
-
-	$(window).resize(function(){
-		var w = $(window).width();
-		if(w > 768 && nav.is(':hidden')) {
-			nav.removeAttr('style');
+		if (navToggleButton.hasClass("active")) {
+			navToggleButton.removeClass("active")
+		} else {
+			navToggleButton.addClass("active");
 		}
-	});
+
+	})
+	// События по клику на ссылки в навигации
+	navLink.on('click', function(){
+
+		if ( navBlock.hasClass(navBlockOpen) ) {
+			
+			if (navToggleButton.hasClass("active")) {
+				navToggleButton.removeClass("active")
+			} else {
+				navToggleButton.addClass("active");
+			}
+			
+		}
+
+		navBlock.removeClass(navBlockOpen);
+		
+	})
+	
+	
+	
 	
 	// Вызов слайдера  
 	$("#top-slider").owlCarousel({

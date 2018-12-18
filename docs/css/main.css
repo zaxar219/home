@@ -1,4 +1,7 @@
 @import "utils.css";
+.logo {
+  display: none;
+}
 @media (min-width: 768px) {
   .logo {
     display: block;
@@ -6,36 +9,36 @@
 }
 .navigation {
   font-size: 20px;
-  background-color: #fff;
   color: #fff;
+  background-color: rgba(104, 107, 111, 0.9);
   font-family: "PlayfairDisplay";
   z-index: 1;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  background-color: rgba(104, 107, 111, 0.9);
 }
 @media (min-width: 768px) {
   .navigation {
     position: relative;
+    background-color: #fff;
   }
 }
 @media (min-width: 768px) {
   .navigation {
     background-color: #fff;
-    margin-top: 7px;
   }
 }
 .navigation .navigation__list-li-link {
   display: block;
-  padding-top: 29px;
-  padding-bottom: 31px;
+  padding-top: 30px;
+  padding-bottom: 29px;
   padding-left: 19px;
   padding-right: 19px;
   color: #fff;
   text-decoration: none;
   width: 100%;
+  transition: all 0.2s ease-in;
 }
 .navigation .navigation__list-li-link:hover {
   color: #000;
@@ -72,9 +75,16 @@
 }
 @media (min-width: 768px) {
   .navigation .navigation__list {
-    display: flex;
     background-color: transparent;
   }
+}
+@media (min-width: 768px) {
+  .navigation .navigation__list {
+    display: flex;
+  }
+}
+.navigation .navigation__list--open {
+  display: block;
 }
 .navigation .navigation__list-li {
   margin: 0;
@@ -86,12 +96,6 @@
     border-bottom: none;
     padding: 0;
   }
-}
-.navigation .navigation__list-li.active {
-  background-color: #f2f2f2;
-}
-.navigation .navigation__list-li:hover {
-  background-color: #f2f2f2;
 }
 .navigation__toggle-button {
   display: block;
@@ -138,26 +142,36 @@
 }
 .social-icon {
   display: none;
+  width: 180px;
+  align-items: center;
+  justify-content: space-between;
 }
 @media (min-width: 1200px) {
   .social-icon {
-    display: inline;
+    display: flex;
   }
 }
 .social-icon:last-child {
   margin-right: 0;
 }
-.social-icon__icon {
+.social-icon__element {
   display: inline-block;
+  margin-right: 10px;
 }
-.social-icon__icon:last-child {
+.social-icon__element:last-child {
   margin-right: 0;
 }
-.social-icon__icon-svg {
-  width: 36px;
-  height: 36px;
+.social-icon__element-png {
+  border: 1px solid #f6f6f6;
+  width: 32px;
+  height: 32px;
   background-repeat: no-repeat;
   background-position: center;
+  border-radius: 20px;
+  transition: all 0.2s ease-in;
+}
+.social-icon__element-png:hover {
+  box-shadow: 0px 3px 25px 0px #bfb9b8;
 }
 .header-slider {
   background-color: #acadb2;
@@ -254,9 +268,14 @@
 }
 #top-slider .owl-pagination {
   position: absolute;
-  top: 451px;
+  top: 495px;
   width: 100%;
   text-align: center;
+}
+@media (min-width: 325px) {
+  #top-slider .owl-pagination {
+    top: 451px;
+  }
 }
 @media (min-width: 768px) {
   #top-slider .owl-pagination {
@@ -637,9 +656,14 @@
 .partners {
   padding-top: 90px;
   padding-bottom: 100px;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: space-between;
+}
+@media (min-width: 1200px) {
+  .partners {
+    display: flex;
+  }
 }
 .partners__section {
   font-size: 28px;
@@ -704,6 +728,9 @@
 }
 .menu {
   margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 @media (min-width: 768px) {
   .menu {
@@ -750,6 +777,9 @@
 */
 * {
   box-sizing: border-box;
+}
+body {
+  min-width: 320px;
 }
 /*
 	*для отзывчевых изоброжений
