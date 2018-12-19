@@ -9,7 +9,7 @@
 }
 
 .deals__state {
-	font-size: 22px;
+	font-size: 37px;
 	font-family: "Raleway";
 	color: #3b3b3b;
 	font-weight: 500;
@@ -18,9 +18,33 @@
 	padding-right: 15px;
 	margin-bottom: 15px;
 	
-	&:after {
-		content: "_"
+	@media (min-width: 768px) {
+		&:after {
+			content: " ";
+			border-bottom: 1px solid #000;
+			width: 34px;
+			display: inline-block;
+			position: absolute;
+			bottom: -19px;
+			right: 15px;
+		}
 	}
+	
+	.We_are_Offering_the_Best_Estate_Deals {
+  font-size: 37px;
+  font-family: "Raleway";
+  color: rgb(60, 60, 60);
+  line-height: 1.351;
+  text-align: right;
+  position: absolute;
+  left: 148.937px;
+  top: 1094.476px;
+  z-index: 183;
+}
+
+	
+	
+	
 	
 	@media (min-width: 768px){
 		font-size: 37px;

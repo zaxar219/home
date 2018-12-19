@@ -5,7 +5,8 @@ $(document).ready(function(){
 	var navBlock = $('.navigation__list');
 	var navBlockOpen = 'navigation__list--open';
 	var navLink = $('.navigation__list-li-link');
-
+	
+	
 	// События по клику на иконку навигации
 	navToggleButton.on('click', function(e){
 		e.preventDefault();
@@ -34,7 +35,6 @@ $(document).ready(function(){
 		navBlock.removeClass(navBlockOpen);
 		
 	})
-	
 	
 	
 	

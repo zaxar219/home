@@ -12,15 +12,20 @@
 	font-size: 45px;
 	font-family: "Raleway";
 	color: #fff;
+	
+	&:after {
+		content: "";
+		border-top: 3px solid #e2574c;
+		width: 110px;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 30px;
+		margin-bottom: 45px;
+	}
 }
 
-.slider-bottom__border {
-	border-bottom: 3px solid #e2574c;
-	width: 115px;
-	padding-top: 30px;
-	margin-bottom: 45px;
-	display: inline-block;
-}
+
 .slider-bottom__description {
 	font-size: 24px;
 	font-family: "Raleway";
@@ -86,8 +91,12 @@
 			background-position: center;
 			background-color: rgba(78, 78, 78, 0.01);
 			position: absolute;
-			top: 13px;
+			top: 145px;
 			left: 0;
+			
+			@media (min-width: 992px) {
+				top: 13px;
+			}
 		}
 		.owl-next {
 			background-image: url('../img/icon/right.png');
@@ -97,8 +106,12 @@
 			background-position: center;
 			background-color: rgba(78, 78, 78, 0.01);
 			position: absolute;
-			top: 13px;
+			top: 145px;
 			right: 0;
+			
+			@media (min-width: 992px) {
+				top: 13px;
+			}
 		}
 	}
 }

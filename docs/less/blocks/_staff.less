@@ -3,15 +3,28 @@
 }
 
 .staff__photo {
-
+	display: none;
+	@media (min-width: 768px) {
+		display: block;
+	}
+}
+.staff__photo-png {
+	height: 545px;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-position: bottom;
 }
 
 
-.staff__slider-border {
-	border-bottom: 3px solid #e2574c;
-	width: 115px;
-	padding-top: 135px;
-	margin-bottom: 35px;
+
+.staff__summary {
+	padding-top: 185px;
+	padding-bottom: 70px;
+	
+	@media (min-width: 992px) {
+		padding-top: 215px;
+		padding-bottom: 90px;
+	}
 }
 
 .staff__name {
@@ -23,18 +36,30 @@
 }
 
 .staff__taxt {
-	font-size: 16px;
+	font-size: 14px;
 	font-family: "PlayfairDisplay";
 	color: #797979;
-	line-height: 1.7;
-	letter-spacing: 0.7px;
+	
+	letter-spacing: -0.5px;
+	
+	@media (min-width: 768px) {
+		font-size: 16px;
+		line-height: 1.7;
+	}
 }
 
 .staff__contect {
 	display: flex;
 	padding-top: 25px;
-	
 }
+
+.staff__contect-connection {
+	display: block;
+	@media (min-width: 768px) {
+		display: inline-block;
+	}
+}
+
 .staff__contect-phon-icon {
 	width: 18px;
 	height: 18px;
@@ -56,20 +81,37 @@
 	background-position: center;
 	background-repeat: no-repeat;
 	margin-left: 27px;
+	display: none;
+	
+	@media (min-width: 473px) {
+		display: block;
+	}
 }
 
 .staff__contect-email {
-	
 	padding-left: 10px;
+	display: none;
 	
+	@media (min-width: 768px) {
+		display: block;
+	}
 }
 #agents-slider {
 	.owl-pagination {
 		display: block;
 		position: absolute;
 		top: 85px;
-		left: 57%;
+		left: 651px;
 		z-index: 2;
+		@media (min-width: 768px) {
+			left: 515px;
+		}
+		@media (min-width: 992px) {
+			left: 590px;
+		}
+		@media (min-width: 1200px) {
+			left: 651px;
+		}
 		
 		.owl-page {
 			

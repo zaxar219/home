@@ -78,6 +78,10 @@
 	}
 	.navigation__list--open {
 		display: block;
+		
+		@media (min-width: 768px) {
+			display: flex;
+		}
 	}
 	
 	.navigation__list-li{
@@ -97,7 +101,7 @@
 	display: block;
 	position: relative;
 	cursor: pointer;
-	
+	z-index: 3;
 	
 	
 	&:before {
