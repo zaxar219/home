@@ -2,9 +2,14 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
-	padding-top: 110px;
-	padding-bottom: 175px;
+	padding-top: 60px;
+	padding-bottom: 120px;
 	text-align: center;
+	
+	@media (min-width: 768px) {
+		padding-top: 110px;
+		padding-bottom: 175px;
+	}
 	
 }
 
@@ -35,7 +40,27 @@
 	width: 700px;
 	margin-left: auto;
 	margin-right: auto;
+	display: none;
+	
+	@media (min-width: 768px) {
+		display: block;
+	}
 }
+
+.slider-bottom__description-min {
+	font-size: 24px;
+	font-family: "Raleway";
+	color: #fff;
+	line-height: 1.4;
+	margin-bottom: 30px;
+	padding-left: 20px;
+	padding-right: 20px;
+	
+	@media (min-width: 768px) {
+		display: none;
+	}
+}
+
 .slider-bottom__aftor {
 	font-size: 20px;
 	font-family: "PlayfairDisplay";

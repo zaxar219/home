@@ -21,6 +21,10 @@
 	padding-top: 185px;
 	padding-bottom: 70px;
 	
+	@media (min-width: 768px) {
+		padding-bottom: 0;
+	}
+	
 	@media (min-width: 992px) {
 		padding-top: 215px;
 		padding-bottom: 90px;
@@ -49,8 +53,12 @@
 }
 
 .staff__contect {
-	display: flex;
+	display: block;
 	padding-top: 25px;
+	
+	@media (min-width: 768px) {
+		display: flex;
+	}
 }
 
 .staff__contect-connection {
@@ -60,50 +68,55 @@
 	}
 }
 
-.staff__contect-phon-icon {
-	width: 18px;
-	height: 18px;
-	background-position: center;
-	background-repeat: no-repeat;
-	
-}
-
 .staff__contect-phon {
+	width: 177px;
+	
 	font-size: 16px;
 	font-weight: 500;
 	color: #3c3c3c;
-	padding-left: 10px;
-}
-
-.staff__contect-email-icon {
-	width: 20px;
-	height: 15px;
-	background-position: center;
-	background-repeat: no-repeat;
-	margin-left: 27px;
-	display: none;
 	
-	@media (min-width: 473px) {
-		display: block;
+	&:before {
+		content: "";
+		display: inline-block;
+		background-image: url('../img/icon/phon.png');
+		width: 20px;
+		height: 15px;
+		background-position: center;
+		background-repeat: no-repeat;
+		margin-right: 10px;
 	}
 }
 
 .staff__contect-email {
-	padding-left: 10px;
-	display: none;
+	width: 260px;
+	margin-top: 10px;
 	
+	display: block;
+	
+	&:before {
+		content: "";
+		display: inline-block;
+		background-image: url('../img/icon/email.png');
+		width: 20px;
+		height: 15px;
+		background-position: center;
+		background-repeat: no-repeat;
+		margin-right: 10px;
+	}
 	@media (min-width: 768px) {
-		display: block;
+		padding-left: 27px;
+		margin-top: 0;
 	}
 }
 #agents-slider {
 	.owl-pagination {
 		display: block;
 		position: absolute;
-		top: 85px;
-		left: 651px;
+		top: 154px;
+		left: 160px;
 		z-index: 2;
 		@media (min-width: 768px) {
+			top: 85px;
 			left: 515px;
 		}
 		@media (min-width: 992px) {
